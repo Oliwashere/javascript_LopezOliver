@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Notas</title>
+<link rel="stylesheet" href="/Dia 2/CSS/styles5.css">
+</head>
+<body>
+
+<h2>Registro de Notas</h2>
+
+<div id="students-list"></div>
+
+<div id="notes-form" style="display: none;">
+  <h3>Ingresar Notas</h3>
+  <label for="theory-grade">Nota Teórica:</label>
+  <input type="number" id="theory-grade" min="0" max="100" required><br>
+  <label for="practical-grade">Nota Práctica:</label>
+  <input type="number" id="practical-grade" min="0" max="100" required><br>
+  <button onclick="saveGrades()">Guardar Notas</button>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="/Dia 2/HTML/coordi.html">1. Salir</a>
+  </div>
+</body>
+</html>
