@@ -1,9 +1,11 @@
-const readline = require('readline');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+const rl = {
+    question: function(question, callback) {
+      const userInput = prompt(question);
+      callback(userInput);
+    },
+    close: function() {
+    }
+  };
 
 rl.question('Posición de la primera reina (fila columna): ', (position) => {
     const [row, col] = position.split(' ').map(Number);
