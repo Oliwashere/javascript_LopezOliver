@@ -1,3 +1,127 @@
 html{
-    background-color: rgb(54, 36, 61);
+    background-image: url("/Dia 8/media/1920x1080.jpg");
+}
+.container{
+    position: absolute;
+    background:rgba(11, 11, 146, 0.45); 
+    width: 1500px;
+    height: 660px;
+    margin-top: 100px;
+    margin-left: 8%;
+    border-radius: 50px;
+    border-color: rgb(100, 73, 134);
+    border-style: solid solid;
+}
+.info {
+    color: rgb(227, 179, 255);
+    font-size: 18px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 116px;
+}
+.sep {
+    position: absolute;
+    height: 660px;
+    width: 0.5px;
+    margin-left: 115px;
+    background-color: rgb(100, 73, 134);
+
+}
+.info2 {
+    position: absolute;
+    color: rgb(227, 179, 255);
+    font-size: 18px;
+    text-align: left;
+    margin-top: -640px;
+    margin-left: 20px
+}
+.line1{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line2{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line3{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line4{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line5{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line6{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line7{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line8{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line9{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line10{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line11{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line12{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line13{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line14{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
+}
+.line15{
+    position: absolute;
+    width: 1385px;
+    height: 0.5px;
+    background-color: rgb(100, 73, 134);
 }
