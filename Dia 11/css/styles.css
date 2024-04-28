@@ -44,3 +44,16 @@ main {
 .pokemon_id {
     color: gray;
 }
+
+.form {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -220px; 
+}
+
+.input__search{
+    width: 300px;
+    font-size: 18px;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    padding: 10px;
+}
