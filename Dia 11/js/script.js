@@ -19,7 +19,7 @@ async function fetchPokemonData(pokemon) {
 async function displayPokemonInfo(pokemon) {
     const pokemonInfo = await fetchPokemonData(pokemon);
     if (pokemonInfo) {
-      pokemonImage.src = pokemonInfo.sprites.front_animated;
+      pokemonImage.src = pokemonInfo.sprites.front_default;
       pokemonName.textContent = pokemonInfo.name;
       pokemonNumber.textContent = pokemonInfo.id;
       input.value = '';
@@ -30,3 +30,19 @@ async function displayPokemonInfo(pokemon) {
       pokemonNumber.textContent = '';
     }
 }
+
+form.addEventListener('submit', event => {
+    event.preventDefault();
+    displayPokemonInfo(input.value.toLowerCase());
+  });
+  
+  buttonPrev.addEventListener('click', () => {
+    if (searchPokemon > 1) displayPokemonInfo(--searchPokemon);
+  });
+  
+  buttonNext.addEventListener('click', () => {
+    displayPokemonInfo(++searchPokemon);
+  });
+  
+  displayPokemonInfo(searchPokemon);
+  
