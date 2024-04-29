@@ -6,3 +6,27 @@ const input = document.querySelector('.input__search');
 const buttonPrev = document.querySelector('.btn-prev');
 const buttonNext = document.querySelector('.btn-next');
 let searchPokemon = 1;
+
+async function fetchPokemonData(pokemon) {
+    try {
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+      if (response.ok) return await response.json();
+    } catch (error) {
+      console.error('Error fetching Pokemon data:', error);
+    }
+}
+
+async function displayPokemonInfo(pokemon) {
+    const pokemonInfo = await fetchPokemonData(pokemon);
+    if (pokemonInfo) {
+      pokemonImage.src = pokemonInfo.sprites.front_animated;
+      pokemonName.textContent = pokemonInfo.name;
+      pokemonNumber.textContent = pokemonInfo.id;
+      input.value = '';
+      searchPokemon = pokemonInfo.id;
+    } else {
+      pokemonImage.style.display = 'none';
+      pokemonName.textContent = 'Not found :c';
+      pokemonNumber.textContent = '';
+    }
+}
