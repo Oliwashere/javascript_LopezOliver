@@ -22,3 +22,12 @@ function dealInitialCards() {
             console.log('Cartas del crupier:', dealerCards);
         })
 }
+
+function init() {
+    initDeck();
+    dealInitialCards();
+}
+
+window.onload = function() {
+    init();
+}
