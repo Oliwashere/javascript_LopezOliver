@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+html {
+    background-color: black;
+}
+    
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+  
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(196, 29, 29);
+    font-size: 16px;
+    font-family: 'Oxanium', cursive;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
