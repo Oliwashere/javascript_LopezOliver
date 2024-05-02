@@ -18,3 +18,16 @@ html {
     font-size: 20px;
     text-align: center;
 }
+
+.gamecontainer {
+    width: 1500px;
+    height: 650px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+}
