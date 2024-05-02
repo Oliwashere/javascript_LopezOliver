@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
 
-.html {
+html {
     background-color: black;
 }
 
@@ -10,4 +10,11 @@
     font-family: 'Oxanium', cursive;
     font-size: 50px;
     text-align: center; 
+}
+
+.desc {
+    color: white;
+    font-family: 'Oxanium', cursive;
+    font-size: 20px;
+    text-align: center;
 }
