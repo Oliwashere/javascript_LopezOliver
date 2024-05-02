@@ -31,4 +31,8 @@ button {
     line-height: 150px;
     font-size: 20px;
     border-radius: 6.5px;
-  }
+}
+
+.card:hover {
+    cursor: pointer;
+}
