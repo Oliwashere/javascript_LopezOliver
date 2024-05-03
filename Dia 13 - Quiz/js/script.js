@@ -39,5 +39,22 @@ document.addEventListener('DOMContentLoaded', function() {
       renderData();
       form.reset();
     });
+  
+    //Editar
+    window.editData = function(index) {
+      const newData = prompt('Ingrese los nuevos datos separados por coma (por ejemplo: Nombre Personaje, Nombre Actor, Edad Actor, Ubicación, Poster, Fecha, Productora):');
+      const [
+        heroname,
+        actorname,
+        actorage,
+        location,
+        poster,
+        date,
+        producer
+      ] = newData.split(',').map(item => item.trim());
+      data[index] = { heroname, actorname, actorage, location, poster, date, producer };
+      localStorage.setItem('data', JSON.stringify(data));
+      renderData();
+    };
 });
   
