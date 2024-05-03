@@ -11,29 +11,42 @@
     <div class="container">
         <p class="title">Bienvenido al CRUD de superheroes</p>
         <form id="crud-form">
-            <div class="form-group">
-                <label for="heroname">Nombre:</label>
-                <input type="text" id="hero-name" required>
-                <label for="actorname">Nombre Actor:</label>
-                <input type="text" id="actor-name" required>
-                <label for="actorage">Edad Actor:</label>
-                <input type="number" id="actor-age" required>
-                <label for="location">Ubicación:</label>
-                <input type="text" id="location" required>
-                <label for="poster">Poster:</label>
-                <input type="text" id="poster" required>
-                <lable for="date">Fecha:</lable>
-                <input type="date" id="date" required>
-                <label for="producer">Productora:</label>
-                <select id="producer" required>
-                    <option value="Marvel">Marvel</option>
-                    <option value="DC">DComics</option>
-                </select>
+                <div class="form-group">
+                    <label for="heroname">Nombre Personaje:</label>
+                    <input type="text" id="hero-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="actorname">Nombre Actor:</label>
+                    <input type="text" id="actor-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="actorage">Edad Actor:</label>
+                    <input type="number" id="actor-age" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Ubicación:</label>
+                    <input type="text" id="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="poster">Poster:</label>
+                    <input type="text" id="poster" required>
+                </div>
+                <div class="form-group">
+                    <lable for="date">Fecha:</lable>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="producer">Productora:</label>
+                    <select id="producer" required>
+                        <option value="Marvel">Marvel</option>
+                        <option value="DC">DComics</option>
+                    </select>
+                </div>
                 <button type="reset">Nuevo héroe</button>
                 <button type="submit">Guardar héroe</button>
-                <button type="button">Editar héroe</button>
-            </div>
+                <button type="reset">Salir</button>
         </form>
+        <div class="data-container" id="data-container"></div>
     </div>
     
 </body>
