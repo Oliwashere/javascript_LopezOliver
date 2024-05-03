@@ -56,5 +56,17 @@ document.addEventListener('DOMContentLoaded', function() {
       localStorage.setItem('data', JSON.stringify(data));
       renderData();
     };
+  
+    //Eliminar
+    window.deleteData = function(index) {
+      const confirmation = confirm('¿Estás seguro de que quieres eliminar este Héroe?');
+      if (confirmation) {
+        data.splice(index, 1);
+        localStorage.setItem('data', JSON.stringify(data));
+        renderData();
+      }
+    };
+  
+    renderData();
 });
   
