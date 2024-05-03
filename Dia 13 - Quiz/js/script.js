@@ -23,5 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
         dataContainer.innerHTML += row;
       });
     }
+
+    //Agregar
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const heroname = document.getElementById('hero-name').value;
+      const actorname = document.getElementById('actor-name').value;
+      const actorage = document.getElementById('actor-age').value;
+      const location = document.getElementById('location').value;
+      const poster = document.getElementById('poster').value;
+      const date = document.getElementById('date').value;
+      const producer = document.getElementById('producer').value;
+      data.push({ heroname, actorname, actorage, location, poster, date, producer });
+      localStorage.setItem('data', JSON.stringify(data));
+      renderData();
+      form.reset();
+    });
 });
   
