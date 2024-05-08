@@ -16,5 +16,5 @@ fetch(request).then((Response)  => {
     let f = document.getElementById("password");
     f.innerHTML = JSON.stringify(data.results[0].login.password);
     let g = document.getElementById("pfp");
-    g.innerHTML = JSON.stringify(data.results[0].picture.medium);
+    g.src = data.results[0].picture.large;
 })  
