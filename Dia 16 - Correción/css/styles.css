@@ -12,10 +12,11 @@ html {
     border-width: 2px;
     border-color: rgb(238, 238, 238);
     margin-left: 55vh;
-    margin-top: 20vh;
+    margin-top: 2vh;
 }
 
 .pfpcontainer {
+    position: absolute;
     width: 150px;
     height: 150px;
     margin-left: 30vh;
@@ -23,34 +24,51 @@ html {
 }
 
 .pfp {
+    position: absolute;
     width: 150px;
     height: 150px;
+    border-radius: 100%;
 }
 
 .texto {
-    text-align: center;
+    position: absolute;
+    margin-left: 12vh;
+    margin-top: 20vh;
 }
 
 .txt1 {
-    color: rgb(145, 145, 145) !important;
+    color: rgb(145, 145, 145);
 }
 
 .txt2 {
-    color: rgb(145, 145, 145) !important;
+    color: rgb(145, 145, 145);
 }
 
 .txt3 {
-    color: rgb(145, 145, 145) !important;
+    color: rgb(145, 145, 145);
 }
 
 .txt4 {
-    color: rgb(145, 145, 145) !important;
+    color: rgb(145, 145, 145);
 }
 
 .txt5 {
-    color: rgb(145, 145, 145) !important;
+    color: rgb(145, 145, 145);
 }
 
 .txt6 {
-    color: rgb(145, 145, 145) !important;
+    color: rgb(145, 145, 145);
 }
+
+.imglol {
+    position: absolute;
+    border-radius: 100%;
+    margin-left: -9vh;
+}
+
+.imglol:hover {
+    width: 7vh;
+    margin-left: -9.5vh;
+    margin-top: -0.5vh;
+    cursor: pointer;
+}   
