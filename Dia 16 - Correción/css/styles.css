@@ -1,0 +1,56 @@
+html {
+    background-color: rgb(226, 226, 226);
+}
+
+.container {
+    position: absolute;
+    width: 700px;
+    height: 650px;
+    background-color: rgba(245, 245, 245, 0.514);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: rgb(238, 238, 238);
+    margin-left: 55vh;
+    margin-top: 20vh;
+}
+
+.pfpcontainer {
+    width: 150px;
+    height: 150px;
+    margin-left: 30vh;
+    margin-top: 5vh;
+}
+
+.pfp {
+    width: 150px;
+    height: 150px;
+}
+
+.texto {
+    text-align: center;
+}
+
+.txt1 {
+    color: rgb(145, 145, 145) !important;
+}
+
+.txt2 {
+    color: rgb(145, 145, 145) !important;
+}
+
+.txt3 {
+    color: rgb(145, 145, 145) !important;
+}
+
+.txt4 {
+    color: rgb(145, 145, 145) !important;
+}
+
+.txt5 {
+    color: rgb(145, 145, 145) !important;
+}
+
+.txt6 {
+    color: rgb(145, 145, 145) !important;
+}
