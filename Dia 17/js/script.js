@@ -1,4 +1,4 @@
- class crearRandomUser extends HTMLElement{
+class crearRandomUser extends HTMLElement{
     constructor(){
         super();
         let miShadow = this.attachShadow({mode:'open'});
@@ -117,29 +117,20 @@
             </div>
         </div>
     </div>
-        <script>
-        fetch('https://randomuser.me/api/')
-        .then(response => response.json())
-        .then(data => {
-
-            let a = document.getElementById("name");
-            a.innerHTML = JSON.stringify(data.results[0].name.first + " " + data.results[0].name.last);
-            let b = document.getElementById("email");
-            b.innerHTML = JSON.stringify(data.results[0].email);
-            let c = document.getElementById("date");
-            c.innerHTML = JSON.stringify(data.results[0].dob.date);
-            let d = document.getElementById("address");
-            d.innerHTML = JSON.stringify(data.results[0].location.street.number + " " + data.results[0].location.street.name);
-            let e = document.getElementById("phone");
-            e.innerHTML = JSON.stringify(data.results[0].phone);
-            let f = document.getElementById("password");
-            f.innerHTML = JSON.stringify(data.results[0].login.password);
-            let g = document.getElementById("pfp");
-            g.src = data.results[0].picture.large;
-            
-        </script>
-        </body>
-        `
+        `;
+        
+        fetch("https://randomuser.me/api/")
+        .then((response) => response.json())
+        .then((data) => {
+            const userData = data.results[0];
+            miShadow.getElementById("name").textContent = `${userData.name.first} ${userData.name.last}`;
+            miShadow.getElementById("email").textContent = userData.email;
+            miShadow.getElementById("date").textContent = userData.dob.date;
+            miShadow.getElementById("address").textContent = `${userData.location.street.number} ${userData.location.street.name}`;
+            miShadow.getElementById("phone").textContent = userData.phone;
+            miShadow.getElementById("password").textContent = userData.login.password;
+            miShadow.getElementById("pfp").src = userData.picture.large;
+        }) 
     }
 }
 
